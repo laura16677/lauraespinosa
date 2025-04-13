@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda de Laura espinosa - Tienda de Hogar</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    /* CSS irá aquí */
+  </style>
+</head>
+<body>
+  <div class="filtros-categorias">
+    <label for="filtro-categorias">Filtrar por categoría:</label>
+    <select id="filtro-categorias">
+      <option value="todos">Todos</option>
+      <option value="cubrelecho">Cubrelecho</option>
+      <option value="sabanas">Sábanas</option>
+      <option value="cortinas">Cortinas</option>
+      <option value="cojines">Cojines</option>
+      <option value="mantas">Mantas</option>
+      <option value="tapete">Tapete</option>
+      <option value="fundas">Fundas</option>
+    </select>
+  </div>
+
+  <header class="header-tienda">
+    <h1>✨ Tienda de Laura Espinosa</h1>
+    <p>Tu hogar con estilo y elegancia</p>
+    <div class="contador-carrito">🛒 <span id="contador">0</span></div>
+  </header>
+
+  <main>
+    <div id="productos" class="grid-productos"></div>
+
+    <div class="carrito">
+      <h2>🧾 Tu Carrito</h2>
+      <ul id="lista-carrito"></ul>
+      <p class="total"><strong>Total: $<span id="total">0</span></strong></p>
+      <div class="acciones-carrito">
+        <button class="vaciar" onclick="vaciarCarrito()">🧹 Vaciar Carrito</button>
+        <button class="comprar" onclick="finalizarCompra()">💳 Finalizar Compra</button>
+      </div>
+      <div id="paypal-button-container"></div>
+    </div>
+  </main>
+
+  <footer>
+    <p>Tienda creada por Valentina Rodríguez © 2023</p>
+  </footer>
+
+  <script src="https://www.paypal.com/sdk/js?client-id=test&currency=COP"></script>
+  <script>
+    // JavaScript irá aquí
+  </script>
+</body>
+</html>
